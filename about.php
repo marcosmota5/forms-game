@@ -36,7 +36,7 @@
         <p>Developed by: Marcos Oliveira Mota</p>
         <p>Created on: 2024-04-07</p>
         <p>Assignment detail: COMP 1002 Assignment 3</p>
-        <p>GitHub repository: COMP 1002 Assignment 3</p>
+        <p>GitHub repository: <a href="https://github.com/marcosmota5/forms-game" title="GitHub Repository">Forms Game Repository</a></p>
         <p>Contact: <a href="mailto:marcosmota5@hotmail.com">marcosmota5@hotmail.com</a></p>
         <br>
         <br>
