@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <!-- 
+        COMP 1002 Assignment 3
+        Student Id: 200564426
+        Student Name: Marcos Oliveira Mota
+        Created on: 2024-04-07
+    -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | Forms Game</title>
     <meta name="author" content="" />
-    <meta name="description" content="Website of old products">
+    <meta name="description" content="Game to select forms with all different or all equal elements">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
     <!-- Font Awesome CDN link for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 

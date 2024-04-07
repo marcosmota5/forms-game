@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <!-- 
-        COMP 1002 Assignment 2
+        COMP 1002 Assignment 3
         Student Id: 200564426
         Student Name: Marcos Oliveira Mota
-        Created on: 2024-03-02
+        Created on: 2024-04-07
     -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Movie Cover Reproduction: The Lord of The Rings - The Fellowship of the Ring</title>
+    <title>About | Forms Game</title>
     <meta name="author" content="Marcos Mota" />
     <meta name="description" content="A reproduction of the movie poster">
     <meta name="viewport" content="width=device-width, initial-scale=1">

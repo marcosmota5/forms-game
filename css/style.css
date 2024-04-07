@@ -200,48 +200,40 @@ body {
 }
 
 #get-answer:hover span {
-    color:rgb(77, 97, 212); /* Replace with the color you want */
+    color:rgb(77, 97, 212);
 }
-/* 
-#available-answers-count {
-    border-radius: 50%;
-    background-color: rgb(115, 212, 77);
-    font-size: 12px;
-} */
 
 #get-answer-elements {
     cursor: pointer;
     display: flex;
-    position: relative; /* changed to relative */
+    position: relative;
     align-items: center;
     justify-content: center;
 }
 
 #get-answer-elements:hover span {
-    color: rgb(77, 97, 212); /* Replace with the color you want */
+    color: rgb(77, 97, 212);
 }
 
 #available-answers-count {
-    position: absolute; /* position it absolutely within #get-answer */
-    bottom: -2px; /* position it at the top of #get-answer */
-    right: -4px; /* position it to the right within #get-answer */
+    position: absolute;
+    bottom: -2px;
+    right: -4px;
     border-radius: 50%;
     background-color: rgb(115, 212, 77);
     font-size: 8px;
-    width: 15px; /* adjust for a perfect circle */
-    height: 15px; /* adjust for a perfect circle */
-    display: flex; /* to center the text inside */
-    align-items: center; /* center vertically */
-    justify-content: center; /* center horizontally */
-    padding: 2px; /* optional for adjusting the size of the circle */
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
 }
 
-/* Optional: If the text inside #available-answers-count is still not perfectly aligned */
 #available-answers-count::before {
     content: '';
-    margin-top: -2px; /* Adjust this as needed for better vertical alignment */
+    margin-top: -2px;
 }
-
 
 #toggle-sound {
    
@@ -257,7 +249,7 @@ body {
 }
 
 #toggle-sound:hover span {
-    color:rgb(77, 97, 212); /* Replace with the color you want */
+    color:rgb(77, 97, 212);
 }
 
 .wrong-answer {
@@ -274,10 +266,9 @@ footer {
     width: 100%;
 }
 
-
 .disabled-element {
-    pointer-events: none; /* This prevents the element from being clickable or focusable */
-    opacity: 0.4; /* This reduces the opacity, making it look "disabled" */
+    pointer-events: none;
+    opacity: 0.4;
 }
 
 /* ***************************************
@@ -329,17 +320,15 @@ and adapted to my needs
 }
 
 .notifications {
-    
     position: absolute;
-    z-index: 1000; /* high value to ensure it's on top of other elements */
-    top: 50%; /* center vertically */
-    left: 50%; /* center horizontally */
-    transform: translate(-50%, -50%); /* adjust for actual centering */
-    width: 500px; /* or any desired width */
-    max-height: 300px; /* or any desired height */
-    overflow-y: auto; /* allows scroll if content is too long */
-    background-color: white; /* or any desired background color */
- 
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: white;
 }
 
 .toast-texts {
@@ -352,14 +341,6 @@ and adapted to my needs
 
 .toast-title {
     font-weight: bold;
-}
-
-.toast-subtitle {
-
-}
-
-.toast-detail {
-   
 }
 
 @keyframes show_toast {
@@ -474,9 +455,6 @@ and adapted to my needs
 
 /* ***************************************
 *************************************** */
-
-
-
 
 
 /* Media query for small screens */
