@@ -1,0 +1,502 @@
+/* Style of the main content */
+nav {
+    background-color: #333;
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.company-name {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.options {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.options a:hover {
+    background-color: #555;
+}
+
+html,
+body,
+main {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+}
+
+main {
+    margin-bottom: 280px;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+.welcome {
+    font-size: 24px;
+    text-align: center;
+}
+
+.please-read-instructions {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.game {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.frame-container {
+    padding: 30px 0;
+    margin-left: 40px;
+    display: grid;
+    max-width: 450px;
+    grid-gap: 1em;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "box-1 box-2 box-3"
+        "box-4 box-5 box-6"
+        "box-7 box-8 box-9";
+}
+
+.frame {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 200px;
+    border: solid 3px gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.frame-correct {
+    border: solid 3px rgb(115, 212, 77);
+}
+
+.frame:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.frame-selected {
+    background-color: rgb(0, 51, 204, 0.3);
+}
+
+.frame-selected:hover {
+    background-color: rgb(0, 51, 204, 0.3);
+}
+
+.one-shape-1 {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+    align-self: center;
+}
+
+.two-shapes-1 {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+    align-self: flex-start;
+    margin: 0 0 0 15px;
+}
+
+.two-shapes-2 {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+    align-self: flex-end;
+    margin: 0 15px 0 0;
+}
+
+.three-shapes-1 {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+    align-self: flex-start;
+}
+
+.three-shapes-2 {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+    align-self: center;
+}
+
+.three-shapes-3 {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+    align-self: flex-end;
+}
+
+#get-answer {
+   
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#get-answer:hover span {
+    color:rgb(77, 97, 212); /* Replace with the color you want */
+}
+/* 
+#available-answers-count {
+    border-radius: 50%;
+    background-color: rgb(115, 212, 77);
+    font-size: 12px;
+} */
+
+#get-answer-elements {
+    cursor: pointer;
+    display: flex;
+    position: relative; /* changed to relative */
+    align-items: center;
+    justify-content: center;
+}
+
+#get-answer-elements:hover span {
+    color: rgb(77, 97, 212); /* Replace with the color you want */
+}
+
+#available-answers-count {
+    position: absolute; /* position it absolutely within #get-answer */
+    bottom: -2px; /* position it at the top of #get-answer */
+    right: -4px; /* position it to the right within #get-answer */
+    border-radius: 50%;
+    background-color: rgb(115, 212, 77);
+    font-size: 8px;
+    width: 15px; /* adjust for a perfect circle */
+    height: 15px; /* adjust for a perfect circle */
+    display: flex; /* to center the text inside */
+    align-items: center; /* center vertically */
+    justify-content: center; /* center horizontally */
+    padding: 2px; /* optional for adjusting the size of the circle */
+}
+
+/* Optional: If the text inside #available-answers-count is still not perfectly aligned */
+#available-answers-count::before {
+    content: '';
+    margin-top: -2px; /* Adjust this as needed for better vertical alignment */
+}
+
+
+#toggle-sound {
+   
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#toggle-sound:hover span {
+    color:rgb(77, 97, 212); /* Replace with the color you want */
+}
+
+.wrong-answer {
+    background-color: darksalmon;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.disabled-element {
+    pointer-events: none; /* This prevents the element from being clickable or focusable */
+    opacity: 0.4; /* This reduces the opacity, making it look "disabled" */
+}
+
+/* ***************************************
+These codes for the toast notifications were gotten from the website: https://www.codingnepalweb.com/toast-notification-html-css-javascript/
+and adapted to my needs
+*************************************** */
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --dark: #34495E;
+  --light: #ffffff;
+  --success: #0ABF30;
+  --error: #E24D4C;
+  --warning: #E9BD0C;
+  --info: #3498DB;
+}
+
+
+
+.notifications {
+    top: 30px;
+    right: 20px;
+}
+
+.notifications :where(.toast, .column) {
+    display: flex;
+    align-items: center;
+}
+
+.notifications .toast {
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    border-radius: 4px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background: var(--light);
+    justify-content: space-between;
+    animation: show_toast 0.3s ease forwards;
+}
+
+.notifications {
+    
+    position: absolute;
+    z-index: 1000; /* high value to ensure it's on top of other elements */
+    top: 50%; /* center vertically */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%); /* adjust for actual centering */
+    width: 500px; /* or any desired width */
+    max-height: 300px; /* or any desired height */
+    overflow-y: auto; /* allows scroll if content is too long */
+    background-color: white; /* or any desired background color */
+ 
+}
+
+.toast-texts {
+    display: block;
+}
+
+.toast-texts span {
+    display: block;
+}
+
+.toast-title {
+    font-weight: bold;
+}
+
+.toast-subtitle {
+
+}
+
+.toast-detail {
+   
+}
+
+@keyframes show_toast {
+    0% {
+        transform: translateX(100%);
+    }
+
+    40% {
+        transform: translateX(-5%);
+    }
+
+    80% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.notifications .toast.hide {
+    animation: hide_toast 0.3s ease forwards;
+}
+
+@keyframes hide_toast {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    40% {
+        transform: translateX(0%);
+    }
+
+    80% {
+        transform: translateX(-5%);
+    }
+
+    100% {
+        transform: translateX(calc(100% + 20px));
+    }
+}
+
+.toast::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+        width: 0%;
+    }
+}
+
+.toast.success::before,
+.btn#success {
+    background: var(--success);
+}
+
+.toast.error::before,
+.btn#error {
+    background: var(--error);
+}
+
+.toast.warning::before,
+.btn#warning {
+    background: var(--warning);
+}
+
+.toast.info::before,
+.btn#info {
+    background: var(--info);
+}
+
+.toast .column i {
+    font-size: 1.75rem;
+}
+
+.toast.success .column i {
+    color: var(--success);
+}
+
+.toast.error .column i {
+    color: var(--error);
+}
+
+.toast.warning .column i {
+    color: var(--warning);
+}
+
+.toast.info .column i {
+    color: var(--info);
+}
+
+.toast .column span {
+    font-size: 1.07rem;
+    margin-left: 12px;
+}
+
+.toast i:last-child {
+    color: #aeb0d7;
+    cursor: pointer;
+}
+
+.toast i:last-child:hover {
+    color: var(--dark);
+}
+
+/* ***************************************
+*************************************** */
+
+
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+
+    .notifications {
+        width: 95%;
+    }
+
+    .notifications .toast {
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    .frame-container {
+        margin-left: -4px;
+    }
+
+    .frame {
+        width: 110px;
+        height: 160px;
+    }
+
+}

@@ -1,0 +1,1 @@
+<p>&copy; Forms Game - Site by Marcos Mota. Access my website for other projects: <a href="https://www.marcosmota.tech" style="color: white;">marcosmota.tech</a></p>
