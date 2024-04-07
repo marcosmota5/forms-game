@@ -35,6 +35,7 @@ const toastDetails = {
 
     }
 }
+
 const removeToast = (toast) => {
     toast.classList.add("hide");
     if (toast.timeoutId) clearTimeout(toast.timeoutId); // Clearing the timeout for the toast
@@ -74,6 +75,18 @@ const createToast = (id, text) => {
 document.addEventListener('DOMContentLoaded', function () {
     // Gets/generates the forms
     getForms();
+
+    // Get the correct answers from the session
+    var correctAnswersSaved = sessionStorage.getItem("correct-answers");
+
+    // If the correct answers is greater than 0, set the span element to its number
+    if (correctAnswersSaved > 0) {
+        correctAnswersNumber = correctAnswersSaved;
+
+        const correctAnswers = document.getElementById('correct-answers');
+
+        correctAnswers.innerHTML = 'Correct answers: ' + correctAnswersNumber;
+    }
 
     // Get the max correct answers from the session
     var maxCorrectAnswersSaved = sessionStorage.getItem("max-correct-answers");
@@ -325,6 +338,9 @@ function selectFrame(frameId) {
         // Increment the correct answer number
         correctAnswersNumber++;
 
+        // Set the correct answer value in the session so the user doesn't loose historic even if they refresh the page
+        sessionStorage.setItem("correct-answers", correctAnswersNumber);
+
         // If the correct answers number is greater than the max answer number, 
         // set the max as equal to the correct number, save in the session and set the element
         if (correctAnswersNumber > maxCorrectAnswersNumber) {
@@ -346,6 +362,9 @@ function selectFrame(frameId) {
 
         // Reset the correct answers number
         correctAnswersNumber = 0;
+
+        // Set the correct answer value in the session so the user doesn't loose historic even if they refresh the page
+        sessionStorage.setItem("correct-answers", correctAnswersNumber);
 
         // Reset the available answers number
         availableAnswers = 3;
